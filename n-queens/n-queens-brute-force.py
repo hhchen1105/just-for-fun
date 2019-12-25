@@ -3,7 +3,7 @@
 
 """
 Sample usage:
-python n-queens.py -n 9
+python n-queens-brute-force.py -n 9
 """
 
 
