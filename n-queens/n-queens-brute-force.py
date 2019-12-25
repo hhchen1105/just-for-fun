@@ -40,7 +40,7 @@ def n_queen(n):
             if is_valid(sol, row, col):
                 sol.append((row, col))
                 break
-            while (row == len(sol) and col >= n - 1):
+            while (col >= n - 1):
                 if len(sol) > 0:
                     row, col = sol.pop()
                 else:
