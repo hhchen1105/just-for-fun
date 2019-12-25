@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+Sample usage:
+python n-queens.py -n 9
+"""
+
+
 import argparse
 import sys
 
