@@ -28,11 +28,11 @@ def n_queen(n):
         sol_set1 = [(j, (2*j + n//2 - 1) % n) for j in range(n//2)]
         sol_set2 = [(n-1-j, n-((2*j+n//2) % n)) for j in range(n//2)]
         return sol_set1 + sol_set2
-    else:  # n is odd
-        sol_set1 = [(j, 2*j+1) for j in range(n//2)]
-        sol_set2 = [(n//2+j, 2*j) for j in range(n//2)]
-        sol_set3 = [(n-1, n-1)]
-        return sol_set1 + sol_set2 + sol_set3
+    # n is odd
+    sol_set1 = [(j, 2*j+1) for j in range(n//2)]
+    sol_set2 = [(n//2+j, 2*j) for j in range(n//2)]
+    sol_set3 = [(n-1, n-1)]
+    return sol_set1 + sol_set2 + sol_set3
         
 
 def main(argv):
